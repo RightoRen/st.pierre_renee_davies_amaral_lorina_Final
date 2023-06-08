@@ -1,0 +1,42 @@
+Mobile
+Menu:33.83W 26.6H
+Secondary:33.83W 26.6H
+Logo:174W 74H
+
+Hero:430.5W 241H
+Banners:430W 100H
+
+ImageSquares:360WH
+Buttons: 159H 34W
+
+Foot Back:430W 313W
+LogoF:145W 92H
+SocialMedia:64WH
+
+Tablet
+Side navs: 121W 50H
+Hero:768W 411H
+Logo:450W 63H
+Banner:768W 85H
+Images: 289WH
+Buttons:138W 30H
+
+Foot Back: 768W 313H
+Newsletter: 152W 24H
+Social Media: 36WH
+Terms:454W 118H
+
+Desktop
+Side navs:160W 50H
+Logo:600W 63H
+Hero:1024W 411H
+Banners:1024W 100H
+Images:289W 289H
+Buttons:138W 30H
+
+
+Foot Back:1024W 313H
+Social Media:48W 46H
+Logo:456W 120H
+Newsletter:181W 24H
+Terms:606W 118H
