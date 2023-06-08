@@ -163,16 +163,14 @@ button {
   .s-box {
     background-color: rgb(138, 138, 138);
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 15px;
     text-align: center;
   }
 
   .n-box {
-    margin-top: 50px;
-    margin-bottom: 20px;
     background-color: rgb(138, 138, 138);
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
   }
 
