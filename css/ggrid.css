@@ -24,7 +24,7 @@ html {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column-gap: 20px;
-    max-width: 767px;
+    max-width: 768px;
     margin: 0px auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -112,7 +112,7 @@ html {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 510px) {
 
     .full-width-grid-con {
         display: grid;
@@ -270,7 +270,7 @@ html {
 
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 860px) {
 
     /*body {
       background: #00ff48;
