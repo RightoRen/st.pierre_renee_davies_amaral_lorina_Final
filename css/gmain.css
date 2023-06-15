@@ -6,9 +6,11 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: white;
     color: white;
+
 }
 
 img, embed, object, video, picture {
@@ -24,12 +26,19 @@ h2 {
     color: brown;
 }
 
+section h2 {
+    font-size: 1.5em;
+}
+
 div h2 {
     font-size: 20px;
+    font-family: 'Heebo', sans-serif;
 }
 
 div h3 {
     color: brown;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5em;
 }
 
 p {
@@ -58,6 +67,19 @@ h2 {
 
 .spacer {
     margin-top: 60px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+nav ul li .desktop {
+    display: inline;
+    font-size: 2em;
+    font-family: 'Heebo', sans-serif;
 }
 
 .txt-spacer {
@@ -111,21 +133,17 @@ h2 {
 
 .header-box {
     color: rgb(255, 255, 255);
-    padding: 40px;
+    padding: 12px;
     text-align: center;
+    margin-top: 0;
   }
 
   .hero-box {
-    background-color: rgb(138, 138, 138);
     color: rgb(255, 255, 255);
-    padding: 130px;
     text-align: center;
-    margin-bottom: 10px;
+
   }
 
-  div.hero-image {
-    width: 500px;
-  }
 
   .title-box {
     background-color: rgb(216, 155, 105);
@@ -141,7 +159,7 @@ h2 {
 }
 
 .img-box {
-
+    border: none;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
@@ -213,17 +231,10 @@ article, h3 {
 }
 
 .menu {
-     padding: 20px;
-     text-align: center;
-     margin-top: 15px;
-     margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
 }
 
-.menu-spacer {
-    padding: 20px;
-     text-align: center;
-     margin-top: 135px;
-}
 
 button:hover {
     background-color: rgb(218, 129, 129);
@@ -234,6 +245,52 @@ button:hover {
     cursor: pointer;
 }
 
-a h2:hover {
+a:hover {
     color: rgb(218, 129, 129);  
 }
+
+ul li {
+    display: inline-block;
+    font-size: 20px;
+    color: brown;
+}
+
+.logo img {
+    width: 27%;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 0 0;
+}
+
+.tablet li a {
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.desktop li a {
+    font-size: 24px;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logo-tab img {
+    width: 25%;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 0 0;
+}
+
+
+.logo-desk img {
+    width: 25%;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 0 0;
+}
+
