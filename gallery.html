@@ -5,67 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm Scaffold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/ggrid.css">
     <link rel="stylesheet" href="./css/gmain.css">
 </head>
 <body>
     <h1 class="hidden">Shop Page</h1>
-    <header class="grid-con header-box">
-        <div class="mobile col-span-1 menu">
-            <img src="./img/Hamburger-Menu.png" alt="menu">
-        </div>
-        <div class="tablet m-col-span-2">
-            <a href="index.html">
-                <h2 class="menu-spacer">Home</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="index.html">
-                <h2 class="menu-spacer">Home</h2>
-            </a>
-        </div>
-        <div class="tablet m-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">About Us</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">About Us</h2>
-            </a>
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-4"><img src="./img/LabelPlz.svg" alt="Logo"></div>
-        <div class="mobile col-span-1 menu">
-            <img src="./img/user-solid.png" alt="user icon">
-        </div>
-        
-        <div class="tablet m-col-span-2">
-            <a href="gallery.html">
-                <h2 class="menu-spacer">Products</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="gallery.html">
-                <h2 class="menu-spacer">Products</h2>
-            </a>
-        </div>
-        <div class="tablet m-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">Rewards</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">Rewards</h2>
-            </a>
-        </div>
+    <header class="header-box">
+        <nav>
+            <ul class="grid-con mobile">
+               <li class="menu col-span-1"><img src="./img/Hamburger-Menu.png" alt="menu"></li>
+               <li class="logo col-span-2"><img src="./img/LabelPlz.svg" alt="logo"></li>
+               <li class="menu col-span-1"><img src="./img/user-solid.png" alt="user"></li>
+            </ul>
+            <ul class="grid-con tablet">
+                <li class="menu m-col-span-1"><a href="index.html">Home</a></li>
+                <li class="menu m-col-span-1"><a href="#">About Us</a></li>
+                <li class="logo-tab"><img class=" m-col-span-2" src="./img/LabelPlz.svg" alt="Logo"></li>
+                <li class="menu m-col-span-1"><a href="gallery.html">Products</a></li>
+                <li class="menu m-col-span-1"><a href="#">Rewards</a></li>
+            </ul>
+            <ul class="grid-con desktop">
+                <li class="menu l-col-span-2"><a href="index.html">Home</a></li>
+                <li class="menu l-col-span-2"><a href="#">About Us</a></li>
+                <li class="logo-desk l-col-span-4"><img src="./img/LabelPlz.svg" alt="Logo"></li>
+                <li class="menu l-col-span-2"><a href="gallery.html">Products</a></li>
+                <li class="menu l-col-span-2"><a href="#">Rewards</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="full-width-grid">
             <h2 class="hidden">Hero Image</h2>
-            <div class="mobile col-span-4 box"><img src="./img/MobileHero.jpg" alt="hero mobile"></div>
-            <div class="tablet m-col-span-12 box"><img src="./img/TabHero.jpg" alt="hero tablet"></div>
-            <div class="desktop l-col-span-12 box"><img src="./img/DeskHeroXl.jpg" alt="hero desktop"></div>
+            <div class="mobile col-span-4 hero-box"><img src="./img/HeroXl.jpg" alt="hero mobile"></div>
+            <div class="tablet m-col-span-12 hero-box"><img src="./img/HeroXl.jpg" alt="hero tablet"></div>
+            <div class="desktop l-col-span-12 hero-box"><img src="./img/HeroXl.jpg" alt="hero desktop"></div>
         </section>
         <section class="grid-con title-box">
             <h2 class="col-span-4 m-col-span-12 l-col-span-12">Nutty Products For The Family</h2>
@@ -170,7 +146,7 @@
         </section>
     </main>
     <footer class="grid-con foot-box">
-        <div class="col-span-4 m-col-start-4 m-col-end-9 l-col-start-4 l-col-end-10 logo-space"><img src="./img/LabelPlz.svg"alt="Logo"></div>
+        <div class="col-span-4 m-col-start-4 m-col-end-9 l-col-start-4 l-col-end-10 logo-space"><img src="./img/LabelPlz.svg" alt="Logo"></div>
            
             <div class="mobile col-span-1 s-box"><img src="./img/facebook.png" alt="facebook"></div>
             <div class="mobile col-span-1 s-box"><img src="./img/twitter-1.png" alt="facebook"></div>
