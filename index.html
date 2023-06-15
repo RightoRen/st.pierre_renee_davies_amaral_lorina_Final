@@ -12,69 +12,41 @@
 <body>
     <h1 class="hidden">Midterm</h1>
     <h2 class="hidden">Header Area</h2>
-    <header class="grid-con header-box">
-        <div class="mobile col-span-1 menu">
-            <img src="./img/Hamburger-Menu.png" alt="menu">
-        </div>
-        <div class="tablet m-col-span-2">
-            <a href="index.html">
-                <h2 class="menu-spacer">Home</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="index.html">
-                <h2 class="menu-spacer">Home</h2>
-            </a>
-        </div>
-        <div class="tablet m-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">About Us</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">About Us</h2>
-            </a>
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-4"><img src="./img/LabelPlz.svg" alt="Logo"></div>
-        <div class="mobile col-span-1 menu">
-            <img src="./img/user-solid.png" alt="user icon">
-        </div>
-        
-        <div class="tablet m-col-span-2">
-            <a href="gallery.html">
-                <h2 class="menu-spacer">Products</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="gallery.html">
-                <h2 class="menu-spacer">Products</h2>
-            </a>
-        </div>
-        <div class="tablet m-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">Rewards</h2>
-            </a>
-        </div>
-        <div class="desktop l-col-span-2">
-            <a href="#">
-                <h2 class="menu-spacer">Rewards</h2>
-            </a>
-        </div>
+    <header class="header-box">
+        <nav>
+            <ul class="grid-con mobile">
+               <li class="menu col-span-1"><img src="./img/Hamburger-Menu.png" alt="menu"></li>
+               <li class="logo col-span-2"><img src="./img/LabelPlz.svg" alt="logo"></li>
+               <li class="menu col-span-1"><img src="./img/user-solid.png" alt="user"></li>
+            </ul>
+            <ul class="grid-con tablet">
+                <li class="menu m-col-span-1"><a href="index.html">Home</a></li>
+                <li class="menu m-col-span-1"><a href="#">About Us</a></li>
+                <li class="logo-tab"><img class="m-col-span-2" src="./img/LabelPlz.svg" alt="Logo"></li>
+                <li class="menu m-col-span-1"><a href="gallery.html">Products</a></li>
+                <li class="menu m-col-span-1"><a href="#">Rewards</a></li>
+            </ul>
+            <ul class="grid-con desktop">
+                <li class="menu l-col-span-2"><a href="index.html">Home</a></li>
+                <li class="menu l-col-span-2"><a href="#">About Us</a></li>
+                <li class="logo-desk l-col-span-4"><img src="./img/LabelPlz.svg" alt="Logo"></li>
+                <li class="menu l-col-span-2"><a href="gallery.html">Products</a></li>
+                <li class="menu l-col-span-2"><a href="#">Rewards</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="ull-width-grid-con">
+        <section class="full-width-grid-con">
             <h2 class="hidden">Hero Image Area</h2>
-            <div class="mobile col-span-4 box"><img src="./img/hero-image-desk.jpg" alt="Picture of almonds"></div>
-            <div class="tablet m-col-span-12 box"><img src="./img/hero-image-desk.jpg" alt="Picture of almonds"></div>
-            <div class="desktop l-col-span-12 xl-col-span-12 box"><img src="./img/hero-image-desk.jpg"
+            <div class="mobile col-span-4"><img src="./img/hero-image-desk.jpg" alt="Picture of almonds"></div>
+            <div class="tablet m-col-span-12"><img src="./img/hero-image-desk.jpg" alt="Picture of almonds"></div>
+            <div class="desktop l-col-span-12 xl-col-span-12"><img src="./img/hero-image-desk.jpg"
                     alt="Picture of almonds"></div>
         </section>
 
         <section class="grid-con title-box">
-            <h2 class="col-span-4 m-col-span-12 l-col-sp
-            an-12">About Us</h2>
+            <h2 class="col-span-4 m-col-span-12 l-col-span-12">About Us</h2>
         </section>
 
         <section class="grid-con">
@@ -96,8 +68,12 @@
 
         <section class="grid-con">
             <h2 class="hidden">Video Ad Section</h2>
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box"><img src="./img/video-desk.jpg"
-                    alt="Youtube Video of Root Beer"></div>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                <iframe width="650" height="325" src="https://www.youtube.com/embed/0dUreqjdaB0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
 
@@ -105,29 +81,31 @@
             <h2 class="col-span-4 m-col-span-12 l-col-span-12">Nutty Products for the Family</h2>
         </section>
 
-        <section class="grid-con">
+        <section class="grid-con products">
             <h2 class="hidden">Beverages Section</h2>
-
-            <div class="col-span-4 m-col-span-5 l-col-start-3 l-col-end-6">
+            <div class="col-span-4 m-col-span-6 l-col-span-3">
                 <img src="./img/beverage-desk.jpg" alt="Picture of Dr.Nut Beer">
                 <p class="product-info">Dr.Nut Original Flavour</p>
             </div>
 
-            <div class="col-span-4 m-col-span-5 l-col-start-6 l-col-end-9">
+            <div class="col-span-4 m-col-span-6 l-col-span-3">
                 <img src="./img/beverage-desk.jpg" alt="Picture of Dr.Nut Beer">
                 <p class="product-info">Dr.Nut Cherry Flavour</p>
             </div>
-            </div>
-            <div class="desktop l-col-start-9 l-col-end-12">
+            <div class="col-span-4 m-col-span-6 l-col-span-3">
                 <img src="./img/beverage-desk.jpg" alt="Picture of Dr.Nut Beer">
                 <p class="product-info">Dr.Nut Vanilla Flavour</p>
             </div>
+
+            <div class="col-span-4 m-col-span-6 l-col-span-3">
+                <img src="./img/beverage-desk.jpg" alt="Picture of Dr.Nut Beer">
+                <p class="product-info">Dr.Nut Vanilla Flavour</p>
             </div>
 
-            <button
-                class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box">
-                <p>Read More</p>
-                </div>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 spacer-top">
+            <button>
+            Read More
+            </button></div>
         </section>
 
         <section class="grid-con title-box">
@@ -148,14 +126,14 @@
                     labore et dolore magna.</p>
             </div>
 
-            <button
-                class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box">
-                <p>Read More</p>
-                </div>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 spacer-top">
+                <button>
+                Read More
+                </button></div>
         </section>
 
         <section class="grid-con title-box">
-            <h2 class="col-span-4 m-col-span-12 l-col-span-12">Nuts For Stuff</h2>
+            <h2 class="col-span-4 m-col-span-12 l-col-span-12">Nuts for Stuff</h2>
         </section>
 
         <section class="grid-con">
@@ -164,29 +142,52 @@
                 <img src="./img/shirt-desk.jpg" alt="Picture of Dr.Nut Shirt">
                 <p class="product-info ">Limited Edition T-Shirts</p>
             </div>
-            </div>
 
             <div class="col-span-4 m-col-span-6 l-col-start-7 l-col-end-10">
                 <img src="./img/bottle-desk.jpg" alt="Picture of Dr.Nut Vintage Bottle">
-                <p class="product-info ">Vintage Bottles</p>
+                <p class="product-info">Vintage Bottles</p>
             </div>
-            <button
-                class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-6 l-col-end-8 xl-col-start-6 xl-col-end-8 box">
-                <p>Shop All</p>
-                </div>
+
+            <div class="col-span-4 m-col-span-12 l-col-span-12 spacer-top">
+                <button>
+                Shop All
+                </button></div>
         </section>
 
         <section class="grid-con title-box">
             <h2 class="col-span-4 m-col-span-12 l-col-span-12">Find Us</h2>
         </section>
 
-        <section class="grid-con">
+        <section class="full-width-grid-con">
             <h2 class="hidden">Map Area</h2>
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
-                <img src="./img/map-desk.jpg">
+                <img src="./img/map-desk.jpg" alt="map image of Dr.Nut locations">
             </div>
         </section>
 
+        <section class="grid-con">
+            <div class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12 title-box">
+            <h2>Contact Us</h2></div>
+
+           <p class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12 contact-info">Have any questions, concerns or comments? Maybe ideas for a new flavour? Let us know down below!</p>
+            <div class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12">
+            <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+            <label for="message">Message:</label>
+            <input class="message-box" type="text" id="message" name="message">
+          </form>
+        </div>
+    </section>
+
+        <div class="col-span-4 m-col-span-12 l-col-span-12 spacer-top">
+            <button>
+            Send Message
+            </button></div>
     </main>
 
     <footer class="grid-con footer-box">
@@ -204,9 +205,6 @@
     <script src="./js/main.js"></script>
 </body>
 
-</html>
 
-<script src="js/main.js"></script>
-</body>
 
 </html>

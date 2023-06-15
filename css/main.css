@@ -51,28 +51,96 @@ textarea {
     padding: 0px;
 }
 
-section h2,
-section h3,
-section p {
-    padding-left: 15px;
-}
-
 .hidden {
     display: none;
 }
 
+.spacer-top {
+    margin-top: 20px;
+}
+
+
 /* ---End of General Styles--- */
 
+/* ---Header Styles--- */
 
 .header-box {
-    padding: 40px;
+    color: rgb(255, 255, 255);
+    padding: 12px;
     text-align: center;
+    margin-top: 0;
+  }
+
+section h2 {
+    font-size: 1.5em;
+}
+
+div h2 {
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+div h3 {
+    color: brown;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5em;
+}
+.menu:hover {
+    transition: ease-in 0.2s;
+    cursor: pointer;
 }
 
 a:hover {
     color: rgb(218, 129, 129);  
 }
 
+ul li {
+    display: inline-block;
+    font-size: 20px;
+    color: brown;
+}
+
+.logo img {
+    width: 27%;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 0 0;
+}
+
+.tablet li a {
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.desktop li a {
+    font-size: 24px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-tab img {
+    width: 40%;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 0 0;
+}
+
+
+.logo-desk img {
+    width: 70%;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 0 0;
+}
+
+
+/* ---Main Styles--- */
 
 .title-box {
     background-color: rgb(216, 155, 105);
@@ -80,14 +148,50 @@ a:hover {
     padding: 25px;
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
 
 
+button {
+    border-radius: 45px;
+    color: orangered;
+    background-color: rgb(85, 33, 33);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* --- Products Styles --- */
+
+.products img {
+    margin: 0px auto;
+    display: block;
+
+}
+
 .product-info {
-    margin-left: 80px;
+    text-align: center;
     margin-top: 10px;
     color: brown;
 }
+
+.merch{
+    margin: 0px auto;
+    display: block;
+}
+
+/* --- Find Us Styles --- */
+
+.map-box {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+/* --- Footer Styles--- */
 
 .t-box {
     margin-top: 10px;
@@ -98,22 +202,39 @@ a:hover {
 }
 
 
-button {
-    border-radius: 45px;
-    color: orangered;
-    background-color: rgb(85, 33, 33);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-top: 40px;
-}
-
 .footer-box {
     background-color: rgb(255, 255, 255);
     border: rgb(216, 155, 105) solid 1px;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 80px;
+}
+
+form {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    margin: 0px auto;
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    border: brown solid 2px;
+    margin-bottom: 20px;
+}
+
+.message-box {
+    text-align: center;
+    margin: 0px auto;
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
 }
