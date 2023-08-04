@@ -12,6 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
 
 }
 
@@ -31,7 +32,7 @@ h4,
 h5 {
     margin: 0px;
     padding: 0px;
-
+    font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -42,6 +43,11 @@ a {
 
 p {
     font-size: 18px;
+}
+
+li {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
 }
 
 input,
@@ -60,12 +66,8 @@ textarea {
 }
 
 
-/* ---End of General Styles--- */
-
-/* ---Header Styles--- */
-
 .header-box {
-    color: rgb(255, 255, 255);
+    background-color: rgb(226, 218, 194);
     padding: 12px;
     text-align: center;
     margin-top: 0;
@@ -77,12 +79,12 @@ section h2 {
 
 div h2 {
     font-size: 20px;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 div h3 {
     color: brown;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1.5em;
 }
 .menu:hover {
@@ -95,24 +97,40 @@ a:hover {
 }
 
 ul li {
-    display: inline-block;
-    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
     color: brown;
+    padding: 0;
+    margin: 0;
 }
 
-.logo img {
-    width: 27%;
-    top: 0;
+nav .pg-m {
+ display: inline-flex;
+ flex-direction: row;
+ padding: 0;
+ margin: 0;
+}
+
+.menu {
     align-items: center;
-    padding-left: 20px;
-    margin-top: 0 0;
+    margin-top: 45px;
+    font-weight: 600;
 }
 
-.tablet li a {
-    font-size: 20px;
-    justify-content: space-between;
-    margin-left: 12px;
-    margin-right: 12px;
+.logo {
+    display: flex;
+    justify-content: space-around;
+    width: 89px;
+    height: 101px;
+}
+
+.txt-m {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+    margin-left: 15px;
 }
 
 .desktop li a {
@@ -142,15 +160,23 @@ ul li {
 
 /* ---Main Styles--- */
 
-.title-box {
-    background-color: rgb(216, 155, 105);
-    color: rgb(65, 65, 65);
-    padding: 25px;
+
+  .title-txt {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 24px;
+    color: rgb(192, 59, 0);
   }
 
+  .hero {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    list-style: none;
+  }
 
 button {
     border-radius: 45px;
@@ -173,6 +199,17 @@ button {
 
 }
 
+.txt-spacer {
+    text-align: left;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.txt-colour {
+    color: rgb(192, 59, 0);
+    font-weight: bold;
+}
+
 .product-info {
     text-align: center;
     margin-top: 10px;
@@ -184,12 +221,6 @@ button {
     display: block;
 }
 
-/* --- Find Us Styles --- */
-
-.map-box {
-    margin: 0px auto;
-    padding: 0px;
-}
 
 /* --- Footer Styles--- */
 
@@ -203,11 +234,81 @@ button {
 
 
 .footer-box {
-    background-color: rgb(255, 255, 255);
-    border: rgb(216, 155, 105) solid 1px;
-    color: rgb(255, 255, 255);
+    background-color: rgb(226, 218, 194);
     text-align: center;
-    padding: 80px;
+    padding-top: 16px;
+}
+
+.foot-title {
+    font-size: 20px;
+    color: rgb(126, 126, 126);
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 15px;
+}
+
+footer img {
+    color: chocolate;
+}
+
+footer nav {
+    margin: 0;
+    padding: 0;
+}
+
+footer .menu {
+    margin: 0;
+    padding: 0;
+}
+
+.f-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer .foot-txt {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.foot-txt {
+    color: gray;
+    font-size: 12px;
+    font-style: normal;
+}
+
+footer .icons {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+footer .tm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer .tm-txt {
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tm-txt {
+    color: gray;
+    font-size: 8px;
+    font-style: normal;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
 }
 
 form {
@@ -234,7 +335,200 @@ input {
     margin-top: 10px;
 }
 
+/* --- Contact Styles--- */
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20;
+}
+
+.txt-c {
+    padding-bottom: 100px;
+}
+
+.con-title {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+}
+
+.title-box {
+    background-color: rgb(192, 59, 0);
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  label {
+    color: white;
+    font-size: 16px;
+  }
+
+/* Flexbox Responsive */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    .mobile {
+        display: none;
+        height: 0;
+    }
+
+    nav .mobile{
+        display: none;
+    }
+
+    nav .pg-m {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+       }
+
+       nav .pg-t {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+       }
+
+       .logo-t {
+        display: flex;
+        justify-content: space-around;
+        width: 89px;
+        height: 101px;
+    }
+    
+    .txt-t {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    /* Footer */
+
+    footer .foot-txt-t {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    
+    .foot-txt-t {
+        color: gray;
+        font-size: 12px;
+        font-style: normal;
+    }
+    
+    footer .icons-t {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    
+    footer .tm-txt-t {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .tm-txt-t {
+        color: gray;
+        font-size: 8px;
+        font-style: normal;
+    }
+
+    .foot-title-t {
+        font-size: 25px;
+        color: rgb(126, 126, 126);
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 15px;
+    }
+
+    .icons-t {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+
+    .tablet {
+        display: none;
+    }
+
+    
+    nav .pg-d {
+        display: inline-flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+       }
+
+       .logo-d {
+        display: flex;
+        justify-content: space-around;
+        width: 89px;
+        height: 101px;
+    }
+    
+    .txt-d {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 20px;
+        text-align: left;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    
+    /* Footer */
+
+    footer .foot-txt-d {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    
+    .foot-txt-d {
+        color: gray;
+        font-size: 12px;
+        font-style: normal;
+    }
+    
+    footer .icons-d {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    
+    footer .tm-txt-d {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .tm-txt-d {
+        color: gray;
+        font-size: 8px;
+        font-style: normal;
+    }
+
+    .foot-title-d {
+        font-size: 30px;
+        color: rgb(126, 126, 126);
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 15px;
+    }
+
+    .icons-d {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
 }
