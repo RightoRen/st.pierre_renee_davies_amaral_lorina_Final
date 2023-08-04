@@ -6,33 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm Scaffold</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/ggrid.css">
     <link rel="stylesheet" href="./css/gmain.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1 class="hidden">Shop Page</h1>
+    <h1 class="hidden">Product Page</h1>
     <header class="header-box">
-        <nav>
-            <ul class="grid-con mobile">
-               <li class="menu col-span-1"><img src="./img/Hamburger-Menu.png" alt="menu"></li>
-               <li class="logo col-span-2"><img src="./img/LabelPlz.svg" alt="logo"></li>
-               <li class="menu col-span-1"><img src="./img/user-solid.png" alt="user"></li>
+        <h2 class="hidden">Header Area</h2>
+        <nav class="mobile">
+            <ul class="pg-m">
+                <li class="logo"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
+               <li class="menu"><a href="index.html" class="txt-m">Home</a></li>
+               <li class="menu"><a href="index.html" class="txt-m">Products</a></li>
+               <li class="menu"><a href="index.html" class="txt-m">About Us</a></li>
+               <li class="menu"><a href="index.html" class="txt-m">Contact Us</a></li>
             </ul>
-            <ul class="grid-con tablet">
-                <li class="menu m-col-span-1"><a href="index.html">Home</a></li>
-                <li class="menu m-col-span-1"><a href="#">About Us</a></li>
-                <li class="logo-tab"><img class=" m-col-span-2" src="./img/LabelPlz.svg" alt="Logo"></li>
-                <li class="menu m-col-span-1"><a href="gallery.html">Products</a></li>
-                <li class="menu m-col-span-1"><a href="#">Rewards</a></li>
+        </nav>
+        <nav class="tablet">
+            <ul class="pg-t">
+                <li class="logo-t"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
+               <li class="menu"><a href="index.html" class="txt-t">Home</a></li>
+               <li class="menu"><a href="index.html" class="txt-t">Products</a></li>
+               <li class="menu"><a href="index.html" class="txt-t">About Us</a></li>
+               <li class="menu"><a href="index.html" class="txt-t">Contact Us</a></li>
             </ul>
-            <ul class="grid-con desktop">
-                <li class="menu l-col-span-2"><a href="index.html">Home</a></li>
-                <li class="menu l-col-span-2"><a href="#">About Us</a></li>
-                <li class="logo-desk l-col-span-4"><img src="./img/LabelPlz.svg" alt="Logo"></li>
-                <li class="menu l-col-span-2"><a href="gallery.html">Products</a></li>
-                <li class="menu l-col-span-2"><a href="#">Rewards</a></li>
+        </nav>
+        <nav class="desktop">
+            <ul class="pg-d">
+                <li class="logo-d"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
+               <li class="menu"><a href="index.html" class="txt-d">Home</a></li>
+               <li class="menu"><a href="index.html" class="txt-d">Products</a></li>
+               <li class="menu"><a href="index.html" class="txt-d">About Us</a></li>
+               <li class="menu"><a href="index.html" class="txt-d">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -145,16 +153,73 @@
                 </div>
         </section>
     </main>
-    <footer class="grid-con foot-box">
-        <div class="col-span-4 m-col-start-4 m-col-end-9 l-col-start-4 l-col-end-10 logo-space"><img src="./img/LabelPlz.svg" alt="Logo"></div>
-           
-            <div class="mobile col-span-1 s-box"><img src="./img/facebook.png" alt="facebook"></div>
-            <div class="mobile col-span-1 s-box"><img src="./img/twitter-1.png" alt="facebook"></div>
-            <div class="mobile col-span-1 s-box"><img src="./img/tiktok.png" alt="facebook"></div>
-            <div class="mobile col-span-1 s-box"><img src="./img/twitter-1.png" alt="facebook"></div>
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12"><h2 class="t-box">2023© The Dr. Nut Company. 
-                All Rights Reserved. </h2></div>
+    
+    <footer class="footer-box">
+        <section class="mobile">
+        <nav>
+            <h2 class="foot-title">Let's get in touch!</h2>
+            <ul class="pg-m">
+                <li class="menu icons"><img src="./img/square-instagram.svg" alt="instagram logo"></li>
+                <li class="menu icons"><img src="./img/square-twitter.svg" alt="twitter icon"></li>
+               <li class="menu icons"><img src="./img/facebook.svg" alt="facebook icon"></li>
+               <li class="menu icons"><img src="./img/tiktok.svg" alt="tiktok icon"></li>
+            </ul>
+            <ul class="f-txt">
+                <li class="menu foot-txt"><a href="contact.html">Contact Us</a></li>
+                <li class="menu foot-txt"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                <li class="menu foot-txt"><a href="contact.html">Policies</a></li>
+                <li class="menu foot-txt"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a></li>
+                <li class="menu foot-txt"><a href="#">Fanpage</a></li>
+            </ul>
+        </nav>
+        <article class="tm">
+            <p class="tm-txt">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+        </article>
+    </section>
+    <section class="tablet">
+        <nav>
+            <h2 class="foot-title-t">Let's get in touch!</h2>
+            <ul class="pg-m">
+                <li class="menu icons-t"><img src="./img/square-instagram.svg" alt="instagram logo"></li>
+                <li class="menu icons-t"><img src="./img/square-twitter.svg" alt="twitter icon"></li>
+               <li class="menu icons-t"><img src="./img/facebook.svg" alt="facebook icon"></li>
+               <li class="menu icons-t"><img src="./img/tiktok.svg" alt="tiktok icon"></li>
+            </ul>
+            <ul class="f-txt">
+                <li class="menu foot-txt-t"><a href="contact.html">Contact Us</a></li>
+                <li class="menu foot-txt-t"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                <li class="menu foot-txt-t"><a href="contact.html">Policies</a></li>
+                <li class="menu foot-txt-t"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a></li>
+                <li class="menu foot-txt-t"><a href="#">Fanpage</a></li>
+            </ul>
+        </nav>
+        <article class="tm">
+            <p class="tm-txt-t">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+        </article>
+    </section>
+    <section class="desktop">
+        <nav>
+            <h2 class="foot-title-d">Let's get in touch!</h2>
+            <ul class="pg-m">
+                <li class="menu icons-d"><img src="./img/square-instagram.svg" alt="instagram logo"></li>
+                <li class="menu icons-d"><img src="./img/square-twitter.svg" alt="twitter icon"></li>
+               <li class="menu icons-d"><img src="./img/facebook.svg" alt="facebook icon"></li>
+               <li class="menu icons-d"><img src="./img/tiktok.svg" alt="tiktok icon"></li>
+            </ul>
+            <ul class="f-txt">
+                <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a></li>
+                <li class="menu foot-txt-d"><a href="#">Terms and Services</a></li>
+            </ul>
+        </nav>
+        <article class="tm">
+            <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+        </article>
+    </section>
     </footer>
+    <script src="./js/main.js"></script>
      <script src="./js/main.js"></script>   
 </body>
 </html>
