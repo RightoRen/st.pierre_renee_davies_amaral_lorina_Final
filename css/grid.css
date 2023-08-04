@@ -10,7 +10,6 @@ html {
    padding: 20px;
    text-align: center;
    margin-top: 15px;
-   margin-bottom: 20px;
  }
 
  .full-width-grid-con {
@@ -21,7 +20,7 @@ html {
 .grid-con {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-column-gap: 20px;
+  grid-column-gap: 10px;
   max-width: 720px;
   margin: 0px auto;
   padding-left: 15px;
@@ -100,17 +99,19 @@ html {
 
 .mobile {
   display: block;
+  height: auto;
 }
 
 .tablet {
   display: none;
+  height: 0;
 }
 
 .desktop {
   display: none;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
   .full-width-grid-con {
       display: grid;
@@ -255,10 +256,12 @@ html {
 
     .mobile {
       display: none;
+      height: 0;
     }
     
     .tablet {
       display: block;
+      height: auto;
     }
     
     .desktop {
