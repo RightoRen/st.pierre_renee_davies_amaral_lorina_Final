@@ -6,6 +6,9 @@
     <title>Contact Us</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,25 +27,24 @@
             <nav class="tablet">
                 <ul class="pg-t">
                     <li class="logo-t"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
-                   <li class="menu"><a href="index.html" class="txt-t">Home</a></li>
-                   <li class="menu"><a href="index.html" class="txt-t">Products</a></li>
-                   <li class="menu"><a href="index.html" class="txt-t">About Us</a></li>
-                   <li class="menu"><a href="index.html" class="txt-t">Contact Us</a></li>
+                   <li class="menu-t"><a href="index.html" class="txt-t">Home</a></li>
+                   <li class="menu-t"><a href="gallery.html" class="txt-t">Products</a></li>
+                   <li class="menu-t"><a href="about.html" class="txt-t">About Us</a></li>
+                   <li class="menu-t"><a href="contact.html" class="txt-t">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="desktop">
                 <ul class="pg-d">
                     <li class="logo-d"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
-                   <li class="menu"><a href="index.html" class="txt-d">Home</a></li>
-                   <li class="menu"><a href="index.html" class="txt-d">Products</a></li>
-                   <li class="menu"><a href="index.html" class="txt-d">About Us</a></li>
-                   <li class="menu"><a href="index.html" class="txt-d">Contact Us</a></li>
+                   <li class="menu-d"><a href="index.html" class="txt-d">Home</a></li>
+                   <li class="menu-d"><a href="gallery.html" class="txt-d">Products</a></li>
+                   <li class="menu-d"><a href="about.html" class="txt-d">About Us</a></li>
+                   <li class="menu-d"><a href="contact.html" class="txt-d">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
-    </header>
     <main>
-        <section class="full-width-grid-con">
+        <section class="full-width-grid-con mobile">
             <article class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12 title-box">
             <h2 class="con-title">Contact Us</h2>
             </article>
@@ -50,19 +52,54 @@
             <p class="title-box contact-info txt-c">Have any questions, concerns or comments? Maybe ideas for a new flavour? Let us know down below!</p>
             </article>
         </section>
-        <section class="full-width-grid-con">
+        <section class="full-width-grid-con title-box mobile">
             <article class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12">
-            <form class="title-box">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"> 
-            <label for="lname">Last name:</label>
-            <input type="text" id="email" name="email">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject">
-            <label for="message">Message:</label>
-            <input class="message-box" type="text" id="message" name="message">
-          </form>
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input class="con-txt" name="fnamelname" type="text" placeholder="First And Lastname:">
+                    <input class="con-txt" name="email" type="text" placeholder="Email Address:">
+                    <input class="con-txt" name="subject" type="text" required placeholder="Subject:">
+                    <textarea name="insert-text" placeholder="Insert text here...">Insert text</textarea>
+                    <input class="con-button" name="submit" type="submit" value="SUBMIT">
+                </form>
             </article>
+    </section>
+    <section class="full-width-grid-con tablet">
+        <article class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12 title-box-t">
+        <h2 class="con-title">Contact Us</h2>
+        </article>
+        <article class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12">
+        <p class="title-box-t contact-info txt-c">Have any questions, concerns or comments? Maybe ideas for a new flavour? Let us know down below!</p>
+        </article>
+    </section>
+    <section class="full-width-grid-con title-box-t tablet">
+        <article class="col-span-4 m-col-12 l-col-span-12 xl-col-span-12">
+            <form action="email.php" method="POST" enctype="text/plain">
+                <input class="con-txt" name="fnamelname" type="text" placeholder="First And Lastname:">
+                <input class="con-txt" name="email" type="text" placeholder="Email Address:">
+                <input class="con-txt" name="subject" type="text" required placeholder="Subject:">
+                <textarea name="insert-text" placeholder="Insert text here...">Insert text</textarea>
+                <input class="con-button" name="submit" type="submit" value="SUBMIT">
+            </form>
+        </article>
+    </section>
+    <section class="full-width-grid-con desktop">
+        <article class="l-col-span-12 xl-col-span-12 title-box-d">
+        <h2 class="con-title">Contact Us</h2>
+        </article>
+        <article class="l-col-span-12 xl-col-span-12">
+        <p class="title-box-d contact-info txt-c">Have any questions, concerns or comments? Maybe ideas for a new flavour? Let us know down below!</p>
+        </article>
+    </section>
+    <section class="full-width-grid-con title-box-d desktop">
+        <article class="l-col-span-12 xl-col-span-12">
+            <form action="email.php" method="POST" enctype="text/plain">
+                <input class="con-txt" name="fnamelname" type="text" placeholder="First And Lastname:">
+                <input class="con-txt" name="email" type="text" placeholder="Email Address:">
+                <input class="con-txt" name="subject" type="text" required placeholder="Subject:">
+                <textarea name="insert-text" placeholder="Insert text here...">Insert text</textarea>
+                <input class="con-button" name="submit" type="submit" value="SUBMIT">
+            </form>
+        </article>
     </section>
     </main>
     
@@ -70,7 +107,7 @@
         <section class="mobile">
         <nav>
             <h2 class="foot-title">Let's get in touch!</h2>
-            <ul class="pg-m">
+            <ul class="pg-m-f">
                 <li class="menu icons"><img src="./img/square-instagram.svg" alt="instagram logo"></li>
                 <li class="menu icons"><img src="./img/square-twitter.svg" alt="twitter icon"></li>
                <li class="menu icons"><img src="./img/facebook.svg" alt="facebook icon"></li>
@@ -91,7 +128,7 @@
     <section class="tablet">
         <nav>
             <h2 class="foot-title-t">Let's get in touch!</h2>
-            <ul class="pg-m">
+            <ul class="pg-m-f">
                 <li class="menu icons-t"><img src="./img/square-instagram.svg" alt="instagram logo"></li>
                 <li class="menu icons-t"><img src="./img/square-twitter.svg" alt="twitter icon"></li>
                <li class="menu icons-t"><img src="./img/facebook.svg" alt="facebook icon"></li>
@@ -112,7 +149,7 @@
     <section class="desktop">
         <nav>
             <h2 class="foot-title-d">Let's get in touch!</h2>
-            <ul class="pg-m">
+            <ul class="pg-m-f">
                 <li class="menu icons-d"><img src="./img/square-instagram.svg" alt="instagram logo"></li>
                 <li class="menu icons-d"><img src="./img/square-twitter.svg" alt="twitter icon"></li>
                <li class="menu icons-d"><img src="./img/facebook.svg" alt="facebook icon"></li>
