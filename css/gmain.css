@@ -35,11 +35,6 @@ div h2 {
     font-family: 'Heebo', sans-serif;
 }
 
-div h3 {
-    color: brown;
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.5em;
-}
 
 p {
     color: brown;
@@ -96,11 +91,7 @@ div h2 {
     font-family: 'Work Sans', sans-serif;
 }
 
-div h3 {
-    color: brown;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5em;
-}
+
 .menu:hover {
     transition: ease-in 0.2s;
     cursor: pointer;
@@ -218,7 +209,6 @@ nav .pg-m {
 
 
   .title-box {
-    background-color: rgb(216, 155, 105);
     color: rgb(65, 65, 65);
     padding: 25px;
     text-align: center;
@@ -305,20 +295,6 @@ article, h3 {
 .menu {
     padding: 10px;
     align-items: center;
-}
-
-
-button:hover {
-    background-color: rgb(218, 129, 129);
-}
-
-.menu:hover {
-    transition: ease-in 0.2s;
-    cursor: pointer;
-}
-
-a:hover {
-    color: rgb(218, 129, 129);  
 }
 
 
