@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm Scaffold</title>
+    <title>Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800;900&display=swap"
@@ -81,85 +81,98 @@
             </div>
         </section>
 
-        <section class="hero full-width-grid-con">
-            <h2 class="hidden">Hero Image Area</h2>
-            <div class="mobile col-span-4"><img src="./img/hero-prod-mob.jpg" alt="Picture of almonds"></div>
-            <div class="tablet m-col-span-12"><img src="./img/hero-prodtablet.jpg" alt="Picture of almonds"></div>
-            <div class="desktop l-col-span-12 xl-col-span-12"><img src="./img/hero-image-desk.jpg"
-                    alt="Picture of almonds"></div>
+        <section class="full-width-grid">
+            <h2 class="hidden">Hero Video Desktop</h2>
+            <div id="hero-video-container-desktop">
+                <video controls muted>
+                    <source src="img/VideoAd_motiondesign.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
 
-        <!-- DRINKS SLIDESHOW SECTION -->
+        <!-- DRINKS SECTION -->
 
-        <section class="full-width-grid">
-            <h2 class="hidden">Drinks Slideshow</h2>
-            <div class="mobile col-span-4">
-                <div class="slideshow-container">
-                    <div class="slide">
-                        <img src="img/classic-product-desk.png" alt="Image 1">
-                    </div>
-                    <div class="slide">
-                        <img src="img/cherry-product-desk.png" alt="Image 2">
-                    </div>
-                    <div class="slide">
-                        <img src="img/vanilla-products-desk.png" alt="Image 3">
-                    </div>
+        <section class="full-width-grid mobile">
+            <h2 class="hidden">Drinks</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                <div class="item-container">
+                    <img class="prod-size" src="./img/classic-product-desk.png" alt="Classic Root Beer">
+                    <h4 class="col-span-4 txt-spacer">Douglas Classic</h4>
+                </div>
+                <div class="item-container">
+                    <img class="prod-size" src="./img/cherry-product-desk.png" alt="Cherry Root Beer">
+                    <h4 class="col-span-4 txt-spacer">Flying Cherry</h4>
+                </div>
+                <div class="item-container">
+                    <img class="prod-size" src="./img/vanilla-products-desk.png" alt="Vanilla Root Beer">
+                    <h4 class="col-span-4 txt-spacer">Golden Vanilla</h4>
                 </div>
             </div>
         </section>
 
-        <!-- DRINKS SLIDESHOW SECTION ENDS -->
-
-        <div class="tablet col-span-4 m-col-span-6 l-col-span-6">
-            <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-            <h4 class=" m-col-span-6 l-col-span-6 txt-spacer">Golden Vanilla</h4>
-        </div>
-
-        <div class="desktop col-span-4 m-col-span-6 l-col-span-6">
-            <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-            <h4 class="m-col-span-6 l-col-span-6 txt-spacer">Golden Vanilla</h4>
-        </div>
-
-        <div class="tablet col-span-4 m-col-span-6 l-col-span-6">
-            <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-            <h4 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Flying Cherry</h4>
-        </div>
-
-        <div class="desktop col-span-4 m-col-span-6 l-col-span-6">
-            <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-            <h4 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Flying Cherry</h4>
+        <section class="full-width-grid tablet">
+            <h2 class="hidden">Products Tablet</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12">
+                <div class="img-pos">
+                    <img class="img-box-main" src="./img/classic-product-tab.png" alt="Classic Root Beer">
+                </div>
+                <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Douglas Classic</h4>
+            </div>
+        <div>
+            <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">$9.99 (6 Pack Case)</h4>
         </div>
         </section>
+        
+        <section class="tablet">
+            <h2 class="hidden">New Flavors</h2>
+            <div>
+                <div class="img-pos-t m-col-span-6 l-col-span-6">
+                <img class="img-box-main" src="./img/cherry-product-tab.png" alt="Cherry Root Beer">
+                <img class="img-box-main" src="./img/vanilla-products-tab.png" alt="Vanilla Root Beer">
+                <div id="text" class="m-col-span-6">
+                <h3 class="contain-txt">Flying Cherry</h3>
+                <h3 class="contain-txt">Golden Vanilla</h3>
+                </div>
+                <div id="text-price" class="m-col-span-6">
+                    <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+                    <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+                </div>
+                <div id="button-tab" class="m-col-span-6">
+                    <button class="contain">Add to Cart</button>
+                    <button class="contain">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- DRINKS SECTION ENDS -->
+
 
         <!-- MERCH SECTION -->
 
-        <section class="grid-con title-box">
-            <h3 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">COLLECTABLES</h3>
+        <section class="full-width-grid-con">
+            <div class="col-span-4 m-col-span-6 l-col-span-6">
+                <img src="./img/Merch_ad.png" alt="Ad for Merch">
+            </div>
         </section>
+
         <section class="grid-con">
-            <h2 class="hidden">Merch</h2>
-            <div class="col-span-4 m-col-span-12 l-col-span-12">
-                <div class="img-box"><img src="./img/Tshirt.jpg" alt="shirt"></div>
-                <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut T Shirts</h4>
-            </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/Bottle.jpg" alt="bottle"></div>
-                <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut Original Bottles</h4>
-            </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/Bottle.jpg" alt="placeholder"></div>
-                <h4 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Hats</h4>
-            </div>
-        </section>
-
-        <section class="grid-con title-box">
-            <h3 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">SOCIAL MEDIA</h3>
-        </section>
-
-    </main>
+            <h2 class="hidden">Merch Tablet</h2>
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+            <div class="img-box-b"><img src="./img/oldbottle-desk-prod.png" alt="Old Root Beer Bottles"></div>
+            <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Flying Cherry</h4>
+        </div>
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+            <div class="img-box-b"><img src="./img/oldcrates-desk.png" alt="Dr Nut Crates"></div>
+            <h4 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Golden Vanilla</h4>
+        </div>
+    </section>
 
     <!-- FOOTER SECTION -->
 
+    
     <footer class="footer-box">
         <section class="mobile">
             <h2 class="hidden">Footer Section Mobile</h2>
@@ -243,15 +256,7 @@
                 </ul>
             </nav>
         </section>
-
-        <article class="tm">
-            <h2 class="hidden">Trademark</h2>
-            <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
-        </article>
-
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
