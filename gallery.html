@@ -1,160 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm Scaffold</title>
+    <title>Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/ggrid.css">
-    <link rel="stylesheet" href="./css/gmain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <h1 class="hidden">Shop Page</h1>
+
     <header class="header-box">
-        <nav>
-            <ul class="grid-con mobile">
-               <li class="menu col-span-1"><img src="./img/Hamburger-Menu.png" alt="menu"></li>
-               <li class="logo col-span-2"><img src="./img/LabelPlz.svg" alt="logo"></li>
-               <li class="menu col-span-1"><img src="./img/user-solid.png" alt="user"></li>
+        <h2 class="hidden">Header Area</h2>
+        <nav class="mobile">
+            <ul class="pg-m">
+                <li class="logo"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
+                <li class="menu"><a href="index.html" class="txt-m">Home</a></li>
+                <li class="menu"><a href="gallery.html" class="txt-m">Products</a></li>
+                <li class="menu"><a href="about.html" class="txt-m">About Us</a></li>
+                <li class="menu"><a href="contact.html" class="txt-m">Contact Us</a></li>
             </ul>
-            <ul class="grid-con tablet">
-                <li class="menu m-col-span-1"><a href="index.html">Home</a></li>
-                <li class="menu m-col-span-1"><a href="#">About Us</a></li>
-                <li class="logo-tab"><img class=" m-col-span-2" src="./img/LabelPlz.svg" alt="Logo"></li>
-                <li class="menu m-col-span-1"><a href="gallery.html">Products</a></li>
-                <li class="menu m-col-span-1"><a href="#">Rewards</a></li>
+        </nav>
+        <nav class="tablet">
+            <ul class="pg-t">
+                <li class="logo-t"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
+                <li class="menu-t"><a href="index.html" class="txt-t">Home</a></li>
+                <li class="menu-t"><a href="gallery.html" class="txt-t">Products</a></li>
+                <li class="menu-t"><a href="about.html" class="txt-t">About Us</a></li>
+                <li class="menu-t"><a href="contact.html" class="txt-t">Contact Us</a></li>
             </ul>
-            <ul class="grid-con desktop">
-                <li class="menu l-col-span-2"><a href="index.html">Home</a></li>
-                <li class="menu l-col-span-2"><a href="#">About Us</a></li>
-                <li class="logo-desk l-col-span-4"><img src="./img/LabelPlz.svg" alt="Logo"></li>
-                <li class="menu l-col-span-2"><a href="gallery.html">Products</a></li>
-                <li class="menu l-col-span-2"><a href="#">Rewards</a></li>
+        </nav>
+        <nav class="desktop">
+            <ul class="pg-d">
+                <li class="logo-d"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
+                <li class="menu-d"><a href="index.html" class="txt-d">Home</a></li>
+                <li class="menu-d"><a href="gallery.html" class="txt-d">Products</a></li>
+                <li class="menu-d"><a href="about.html" class="txt-d">About Us</a></li>
+                <li class="menu-d"><a href="contact.html" class="txt-d">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Hero Video -->
+
+        <section class="full-width-grid mobile">
+            <h2 class="hidden">Hero Video Mobile</h2>
+            <div id="hero-video-container-mobile">
+                <video autoplay loop muted>
+                    <source src="img/AdMob.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="full-width-grid tablet">
+            <h2 class="hidden">Hero Video Tablet</h2>
+            <div id="hero-video-container-tablet">
+                <video autoplay loop muted>
+                    <source src="img/AdTab.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="full-width-grid desktop">
+            <h2 class="hidden">Hero Video Desktop</h2>
+            <div id="hero-video-container-desktop">
+                <video autoplay loop muted>
+                    <source src="img/AdDesk.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
         <section class="full-width-grid">
-            <h2 class="hidden">Hero Image</h2>
-            <div class="mobile col-span-4 hero-box"><img src="./img/HeroXl.jpg" alt="hero mobile"></div>
-            <div class="tablet m-col-span-12 hero-box"><img src="./img/HeroXl.jpg" alt="hero tablet"></div>
-            <div class="desktop l-col-span-12 hero-box"><img src="./img/HeroXl.jpg" alt="hero desktop"></div>
+            <h2 class="hidden">Hero Video Desktop</h2>
+            <div id="hero-video-container-desktop">
+                <video controls muted>
+                    <source src="img/VideoAd_motiondesign.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
-        <section class="grid-con title-box">
-            <h2 class="col-span-4 m-col-span-12 l-col-span-12">Nutty Products For The Family</h2>
+
+        <!-- DRINKS SECTION -->
+
+        <section class="full-width-grid mobile">
+            <h2 class="hidden">Drinks</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                <div class="item-container">
+                    <img class="prod-size" src="./img/classic-product-desk.png" alt="Classic Root Beer">
+                    <h4 class="col-span-4 txt-spacer">Douglas Classic</h4>
+                </div>
+                <div class="item-container">
+                    <img class="prod-size" src="./img/cherry-product-desk.png" alt="Cherry Root Beer">
+                    <h4 class="col-span-4 txt-spacer">Flying Cherry</h4>
+                </div>
+                <div class="item-container">
+                    <img class="prod-size" src="./img/vanilla-products-desk.png" alt="Vanilla Root Beer">
+                    <h4 class="col-span-4 txt-spacer">Golden Vanilla</h4>
+                </div>
+            </div>
         </section>
+
+
+
+        <section class="full-width-grid tablet">
+            <h2 class="hidden">Products Tablet</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12">
+                <div class="img-pos">
+                    <img class="img-box-main" src="./img/classic-product-tab.png" alt="Classic Root Beer">
+                </div>
+                </div>
+                <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Douglas Classic</h4>
+            </div>
+        <div>
+            <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">$9.99 (6 Pack Case)</h4>
+        </div>
+        </section>
+        
+        <section class="tablet">
+            <h2 class="hidden">New Flavors</h2>
+            <div>
+                <div class="image-container">
+                <div class="img-pos-t m-col-span-6 l-col-span-6">1
+                <img class="img-box-main" src="./img/cherry-product-tab.png" alt="Cherry Root Beer">
+                <img class="img-box-main" src="./img/vanilla-products-tab.png" alt="Vanilla Root Beer">
+                <div id="text" class="m-col-span-6">
+                <h3 class="contain-txt">Flying Cherry</h3>
+                <h3 class="contain-txt">Golden Vanilla</h3>
+                </div>
+                <div id="text-price" class="m-col-span-6">
+                    <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+                    <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+                </div>
+                <div id="button-tab" class="m-col-span-6">
+                    <button class="contain">Add to Cart</button>
+                    <button class="contain">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="full-width-grid desktop">
+            <h2 class="hidden">Products Desktop</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12">
+                <div class="img-pos">
+                    <img class="img-box-main" src="./img/classic-product-tab.png" alt="Classic Root Beer">
+                </div>
+                <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Douglas Classic</h4>
+        <div>
+            <div id="text-price" class="l-col-span-12 txt-spacer">
+                <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+            </div>
+
+        </div>
+        <div id="button-tab" class="l-col-span-12">
+            <button class="contain">Add to Cart</button>
+        </div>
+
+        </section>
+        
+        <section class="desktop">
+            <h2 class="hidden">New Flavors</h2>
+            <div>
+                <div class="image-container">
+                <div class="img-pos-t m-col-span-6 l-col-span-6">
+                <img class="img-box-main" src="./img/cherry-product-tab.png" alt="Cherry Root Beer">
+                <img class="img-box-main" src="./img/vanilla-products-tab.png" alt="Vanilla Root Beer">
+                <div id="text" class="m-col-span-6">
+                <h3 class="contain-txt">Flying Cherry</h3>
+                <h3 class="contain-txt">Golden Vanilla</h3>
+                </div>
+                <div id="text-price" class="m-col-span-6">
+                    <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+                    <h4 class="contain-txt">$9.99 (6 Pack Case)</h4>
+                </div>
+                <div id="button-tab" class="m-col-span-6">
+                    <button class="contain">Add to Cart</button>
+                    <button class="contain">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DRINKS SECTION ENDS -->
+
+
+        <!-- MERCH SECTION -->
+
+        <section class="full-width-grid-con">
+            <div class="col-span-4 m-col-span-6 l-col-span-6">
+                <img src="./img/Merch_ad.png" alt="Ad for Merch">
+            </div>
+        </section>
+
         <section class="grid-con">
-            <h2 class="hidden">All Age drinks</h2>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut Original Root Beer</h3>   
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>        
+            <h2 class="hidden">Merch Tablet</h2>
+        <div class="col-span-4 m-col-span-6 l-col-span-6">
+            <div class="image-container">
+                <div class="img-box-b"><img src="./img/oldbottle-desk-prod.png" alt="Old Root Beer Bottles"></div>
+                <div class="tooltip">These vintage bottles are one of a kind!</div>
+            </div>
+
+            <h4 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Vintage Bottles</h4>
+            <h4 class="contain-txt-merch">$9.99 (6 Pack Case)</h4>
+            <div id="button-tab-merch" class="col-span-4 m-col-span-6 l-col-span-6">
+                <button class="contain">Add to Cart</button>            
                 </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut Vanilla Root Beer</h3>   
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>          
+        </div>
+       <div class="col-span-4 m-col-span-6 l-col-span-6">
+        <div class="image-container">
+ 
+            <div class="image-container">
+            <div class="img-box-b"><img src="./img/oldcrates-desk.png" alt="Dr Nut Crates"></div>
+            <div class="tooltip">Not many left! Use them for!</div>
+        </div>
+            </div>
+
+            <h4 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Vintage Crates</h4>
+            <h4 class="contain-txt-merch">$9.99 (6 Pack Case)</h4>
+            <div id="button-tab-merch" class="col-span-4 m-col-span-6 l-col-span-6">
+                <button class="contain">Add to Cart</button>            
                 </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Cherry Root Beer</h3>
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 xl-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>          
-                 </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Zero Root Beer</h3>
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 xl-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>
+        </div>
+
+
+
+        </div>
             </div>
+
+
+        </div>
+        </div>
+     
+        </div>
+    
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    
+    <footer class="footer-box">
+        <section class="mobile">
+            <h2 class="hidden">Footer Section Mobile</h2>
+            <nav id="footer-icons-m">
+                <h4 class="foot-title-d">Let's get in touch!</h4>
+                <ul class="f-icons-m">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-menu-m">
+                <ul class="f-txt">
+                    <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                    <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                    <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
+                    </li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and
+                            Services</a></li>
+                </ul>
+            </nav>
+            <article class="tm">
+                <h2 class="hidden">Trademark</h2>
+                <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+            </article>
         </section>
-        <section class="grid-con title-box">
-            <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">Nutty Products After Hours</h2>
+
+        <section class="tablet">
+            <h2 class="hidden">Tablet Footer</h2>
+            <nav id="footer-icons-t">
+                <h4 class="foot-title-d">Let's get in touch!</h4>
+                <ul class="f-icons-t">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-menu-t">
+                <ul class="f-txt">
+                    <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                    <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                    <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
+                    </li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and
+                            Services</a></li>
+                </ul>
+            </nav>
+            <article class="tm">
+                <h2 class="hidden">Trademark</h2>
+                <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+            </article>
         </section>
-        <section class="grid-con">
-            <h2 class="hidden">After Hours</h2>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut Original Beer</h3>   
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>
-            </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut Vanilla Beer</h3>   
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>                  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>         
-                </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Cherry Beer</h3>
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 xl-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>
-            </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/can.jpg" alt="can"></div>
-                    <h3 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Zero Beer</h3>
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 xl-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>
-            </div>
+
+        <section class="desktop">
+            <h2 class="hidden">Desktop Footer</h2>
+            <nav class="footer-icons-d">
+                <h4 class="foot-title-d">Let's get in touch!</h4>
+                <ul class="f-icons-d">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-menu-d">
+                <ul class="f-txt">
+                    <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                    <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                    <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
+                    </li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and
+                            Services</a></li>
+                </ul>
+            </nav>
         </section>
-        <section class="grid-con title-box">
-            <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">Nuts For Stuff</h2>
-        </section>
-        <section class="grid-con">
-            <h2 class="hidden">Merch</h2>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/Tshirt.jpg" alt="shirt"></div>
-                    <h3 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut T Shirts</h3>   
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>    
-                 </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/Bottle.jpg" alt="bottle"></div>
-                    <h3 class="col-span-4 m-col-span-6 l-col-span-6 txt-spacer">Dr.Nut Original Bottles</h3>   
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p><button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>
-            </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/Bottle.jpg" alt="placeholder"></div>
-                    <h3 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Hats</h3>
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 xl-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>          
-                 </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6">
-                <div class="img-box"><img src="./img/Bottle.jpg" alt="placeholder"></div>
-                    <h3 class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 txt-spacer">Dr.Nut Stickers</h3>
-                    <p class="tablet m-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p> 
-                    <p class="desktop l-col-span-6 xl-col-span-6 txt-spacer">Winged multiply was he lesser. Give sixth whales together whales was she'd is lesser whose creeping replenish dry firmament male moving winged. Made lights creepeth one created beginning you'll fruit.</p>  
-                    <button class="col-start-2 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-6">View Product</button>
-                </div>
-        </section>
-    </main>
-    <footer class="grid-con foot-box">
-        <div class="col-span-4 m-col-start-4 m-col-end-9 l-col-start-4 l-col-end-10 logo-space"><img src="./img/LabelPlz.svg" alt="Logo"></div>
-           
-            <div class="mobile col-span-1 s-box"><img src="./img/facebook.png" alt="facebook"></div>
-            <div class="mobile col-span-1 s-box"><img src="./img/twitter-1.png" alt="facebook"></div>
-            <div class="mobile col-span-1 s-box"><img src="./img/tiktok.png" alt="facebook"></div>
-            <div class="mobile col-span-1 s-box"><img src="./img/twitter-1.png" alt="facebook"></div>
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12"><h2 class="t-box">2023© The Dr. Nut Company. 
-                All Rights Reserved. </h2></div>
     </footer>
-     <script src="./js/main.js"></script>   
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
