@@ -6,54 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>Midterm</title>
+    <title>Welcome to Dr. Nut - Canada's Nuttiest Drink!</title>
 </head>
 
 <body>
-    <h1 class="hidden">HomePage</h1>
+
+    <!-- HEADER NAV -->
+
     <header class="header-box">
         <h2 class="hidden">Header Area</h2>
         <nav class="mobile">
             <ul class="pg-m">
                 <li class="logo"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
-               <li class="menu"><a href="index.html" class="txt-m">Home</a></li>
-               <li class="menu"><a href="gallery.html" class="txt-m">Products</a></li>
-               <li class="menu"><a href="about.html" class="txt-m">About Us</a></li>
-               <li class="menu"><a href="contact.html" class="txt-m">Contact Us</a></li>
+                <li class="menu"><a href="index.html" class="txt-m">Home</a></li>
+                <li class="menu"><a href="gallery.html" class="txt-m">Products</a></li>
+                <li class="menu"><a href="about.html" class="txt-m">About Us</a></li>
+                <li class="menu"><a href="contact.html" class="txt-m">Contact Us</a></li>
             </ul>
         </nav>
         <nav class="tablet">
             <ul class="pg-t">
                 <li class="logo-t"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
-               <li class="menu-t"><a href="index.html" class="txt-t">Home</a></li>
-               <li class="menu-t"><a href="gallery.html" class="txt-t">Products</a></li>
-               <li class="menu-t"><a href="about.html" class="txt-t">About Us</a></li>
-               <li class="menu-t"><a href="contact.html" class="txt-t">Contact Us</a></li>
+                <li class="menu-t"><a href="index.html" class="txt-t">Home</a></li>
+                <li class="menu-t"><a href="gallery.html" class="txt-t">Products</a></li>
+                <li class="menu-t"><a href="about.html" class="txt-t">About Us</a></li>
+                <li class="menu-t"><a href="contact.html" class="txt-t">Contact Us</a></li>
             </ul>
         </nav>
         <nav class="desktop">
             <ul class="pg-d">
                 <li class="logo-d"><img src="./img/dr-nut-logo.svg" alt="logo"></li>
-               <li class="menu-d"><a href="index.html" class="txt-d">Home</a></li>
-               <li class="menu-d"><a href="gallery.html" class="txt-d">Products</a></li>
-               <li class="menu-d"><a href="about.html" class="txt-d">About Us</a></li>
-               <li class="menu-d"><a href="contact.html" class="txt-d">Contact Us</a></li>
+                <li class="menu-d"><a href="index.html" class="txt-d">Home</a></li>
+                <li class="menu-d"><a href="gallery.html" class="txt-d">Products</a></li>
+                <li class="menu-d"><a href="about.html" class="txt-d">About Us</a></li>
+                <li class="menu-d"><a href="contact.html" class="txt-d">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
+
     <main>
-        <section class="hero full-width-grid-con">
-            <h2 class="hidden">Hero Gif Area</h2>
-            <div class="mobile col-span-4"><img src="./img/hero-mob.jpg" alt="Picture of almonds"></div>
-            <div class="tablet m-col-span-12"><img src="./img/hero-tab.jpg" alt="Picture of almonds"></div>
-            <div class="desktop l-col-span-12 xl-col-span-12"><img src="./img/hero-image-desk.jpg"
-                    alt="Picture of almonds"></div>
+
+        <!-- Hero Video -->
+
+        <section class="full-width-grid mobile">
+            <h2 class="hidden">Hero Video Mobile</h2>
+            <div id="hero-video-container-mobile">
+                <video autoplay loop muted>
+                    <source src="img/AdMob.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
+
+        <section class="full-width-grid tablet">
+            <h2 class="hidden">Hero Video Tablet</h2>
+            <div id="hero-video-container-tablet">
+                <video autoplay loop muted>
+                    <source src="img/AdTab.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="full-width-grid desktop">
+            <h2 class="hidden">Hero Video Desktop</h2>
+            <div id="hero-video-container-desktop">
+                <video autoplay loop muted>
+                    <source src="img/AdDesk.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
         <section class="hero full-width-grid-con">
             <h2 class="hidden">Hero Image Area</h2>
             <div class="mobile col-span-4"><img src="./img/hero-prod-mob.jpg" alt="Picture of almonds"></div>
@@ -61,134 +91,148 @@
             <div class="desktop l-col-span-12 xl-col-span-12"><img src="./img/hero-image-desk.jpg"
                     alt="Picture of almonds"></div>
         </section>
-   
+
+        <!-- MISSION SECTION -->
+
         <section class="grid-con title-txt">
+            <h2 class="hidden">Section Title</h2>
             <h2 class="col-span-4 m-col-span-12 l-col-span-12">OUR MISSION</h2>
         </section>
 
         <section class="grid-con">
             <h2 class="hidden">Mission Statement</h2>
             <article class="col-span-4 m-col-span-12 l-col-span-12 box">
-                <p class="txt-spacer">Our main goal is to bring the 
+                <h2 class="hidden">Mission Statement</h2>
+                <p class="txt-spacer">Our main goal is to bring the
                     past and present together with our classic taste.<br><br>
-                    We wanted a root beer that 
-                    appeals to the more health 
+                    We wanted a root beer that
+                    appeals to the more health
                     conscious connoisseur while still tasting delicious. </p><br><br>
-                    <p class="txt-spacer txt-colour">Grab your new favourite soda today!</p>
+                <p class="txt-spacer txt-colour">Grab your new favourite soda today!</p>
             </article>
         </section>
 
         <section class="full-width-grid-con mobile">
             <h2 class="hidden">Page Displays Mobile</h2>
-           <ul>
-            <li class="tabs col-span-4"><img src="./img/hero-prod-mob.jpg" alt="cup of root beer"></li>
-            <li class="tabs col-span-4"><img src="./img/about-us-mob.jpg" alt="image of DrNut book"></li>
-            <li class="tabs col-span-4"><img src="./img/contact-mob.jpg" alt="girl typing at computer"></li>
-           </ul>
+            <ul>
+                <li class="tabs col-span-4"><img src="./img/hero-prod-mob.jpg" alt="cup of root beer"></li>
+                <li class="tabs col-span-4"><img src="./img/about-us-mob.jpg" alt="image of DrNut book"></li>
+                <li class="tabs col-span-4"><img src="./img/contact-mob.jpg" alt="girl typing at computer"></li>
+            </ul>
         </section>
 
         <section class="full-width-grid-con tablet">
             <h2 class="hidden">Page Displays Tablet</h2>
-           <ul>
-            <li class="tabs col-span-4"><img src="./img/hero-prodtablet.jpg" alt="cup of root beer"></li>
-            <li class="tabs col-span-4"><img src="./img/about-us-desk.jpg" alt="image of DrNut book"></li>
-            <li class="tabs col-span-4"><img src="./img/contact-desk.jpg" alt="girl typing at computer"></li>
-           </ul>
+            <ul>
+                <li class="tabs col-span-4"><img src="./img/hero-prodtablet.jpg" alt="cup of root beer"></li>
+                <li class="tabs col-span-4"><img src="./img/about-us-desk.jpg" alt="image of DrNut book"></li>
+                <li class="tabs col-span-4"><img src="./img/contact-desk.jpg" alt="girl typing at computer"></li>
+            </ul>
         </section>
 
         <section class="full-width-grid-con desktop">
             <h2 class="hidden">Page Displays Desktop</h2>
-           <ul>
-            <li class="tabs col-span-4"><img src="./img/hero-prodtablet.jpg" alt="cup of root beer"></li>
-            <li class="tabs col-span-4"><img src="./img/about-us-desk.jpeg" alt="image of DrNut book"></li>
-            <li class="tabs col-span-4"><img src="./img/contact-desk.jpg" alt="girl typing at computer"></li>
-           </ul>
+            <ul>
+                <li class="tabs col-span-4"><img src="./img/hero-prodtablet.jpg" alt="cup of root beer"></li>
+                <li class="tabs col-span-4"><img src="./img/about-us-desk.jpeg" alt="image of DrNut book"></li>
+                <li class="tabs col-span-4"><img src="./img/contact-desk.jpg" alt="girl typing at computer"></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer-box">
+        <section class="mobile">
+            <h2 class="hidden">Footer Section Mobile</h2>
+            <nav id="footer-icons-m">
+                <h4 class="foot-title-d">Let's get in touch!</h4>
+                <ul class="f-icons-m">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-menu-m">
+                <ul class="f-txt">
+                    <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                    <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                    <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
+                    </li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and
+                            Services</a></li>
+                </ul>
+            </nav>
+            <article class="tm">
+                <h2 class="hidden">Trademark</h2>
+                <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+            </article>
         </section>
 
-        <footer class="footer-box">
-            <section class="mobile">
-                <nav id="footer nav">
-                    <h4 class="foot-title-d">Let's get in touch!</h4>
-                    <ul class="icons">
-                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                        <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    </ul>
-                </nav>
-    
-                <nav id="footer-menu">
-                    <ul class="f-txt">
-                        <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
-                        <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
-                        <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
-                        <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
-                        </li>
-                        <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and Services</a></li>
-                    </ul>
-                </nav>
-                <article class="tm">
-                    <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
-                </article>
-            </section>
-    
-            </section>
-            <section class="tablet">
-                <nav id="footer-icons">
-                    <h4 class="foot-title-d">Let's get in touch!</h4>
-                    <ul id="icons">
-                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                        <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    </ul>
-                </nav>
-    
-                <nav id="footer-menu">
-                    <ul class="f-txt">
-                        <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
-                        <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
-                        <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
-                        <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
-                        </li>
-                        <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and Services</a></li>
-                    </ul>
-                </nav>
-                <article class="tm">
-                    <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
-                </article>
-            </section>
-            </section>
-    
-            <section class="desktop">
-                <nav id="footer-icons">
-                    <h4 class="foot-title-d">Let's get in touch!</h4>
-                    <ul id="icons">
-                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                        <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
-                    </ul>
-                </nav>
-    
-                <nav id="footer-menu">
-                    <ul class="f-txt">
-                        <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
-                        <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
-                        <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
-                        <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
-                        </li>
-                        <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and Services</a></li>
-                    </ul>
-                </nav>
-                <article class="tm">
-                    <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
-                </article>
-            </section>
-        </footer>
+        <section class="tablet">
+            <h2 class="hidden">Tablet Footer</h2>
+            <nav id="footer-icons-t">
+                <h4 class="foot-title-d">Let's get in touch!</h4>
+                <ul class="f-icons-t">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-menu-t">
+                <ul class="f-txt">
+                    <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                    <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                    <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
+                    </li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and
+                            Services</a></li>
+                </ul>
+            </nav>
+            <article class="tm">
+                <h2 class="hidden">Trademark</h2>
+                <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+            </article>
+        </section>
+
+        <section class="desktop">
+            <h2 class="hidden">Desktop Footer</h2>
+            <nav class="footer-icons-d">
+                <h4 class="foot-title-d">Let's get in touch!</h4>
+                <ul class="f-icons-d">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/tag/rootbeer"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </nav>
+
+            <nav id="footer-menu-d">
+                <ul class="f-txt">
+                    <li class="menu foot-txt-d"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Dr._Nut">FAQ</a></li>
+                    <li class="menu foot-txt-d"><a href="contact.html">Policies</a></li>
+                    <li class="menu foot-txt-d"><a href="https://www.angelfire.com/tn/traderz/DrNut.html">Fanpage</a>
+                    </li>
+                    <li class="menu foot-txt-d"><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms and
+                            Services</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <article class="tm">
+            <h2 class="hidden">Trademark</h2>
+            <p class="tm-txt-d">2023 © The Dr. Nut Company. All Rights Reserved.</p>
+        </article>
+
+    </footer>
     <script src="./js/main.js"></script>
 </body>
-
-
 
 </html>
