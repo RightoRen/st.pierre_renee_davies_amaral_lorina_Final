@@ -111,7 +111,17 @@ html {
   display: none;
 }
 
+@media screen and (max-width: 767px) { 
+
+  .item-container img {
+    max-width: 100%; /* Reset the max-width for mobile devices */
+}
+  
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  
 
   .full-width-grid-con {
       display: grid;
@@ -121,13 +131,23 @@ html {
     .grid-con {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      grid-column-gap: 30px;
+      grid-row: 20px;
       max-width: 1199px;
       /* remove below when you fully understand the passing of rules and values (this rule only) */
       margin: 0px auto;
       padding-left: 15px;
       padding-right: 15px;
     }
+
+    .item-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .item-container {
+      width: 53.33%; /* Distribute each item evenly on a row */
+  }
   
   .m-col-span-1 {
       grid-column: span 1/ span 1;

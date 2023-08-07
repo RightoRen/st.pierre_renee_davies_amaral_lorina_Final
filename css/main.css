@@ -82,13 +82,6 @@ h4 {
 }
 
 
-.title-box {
-    padding: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-
 nav ul li {
     text-decoration: none;
     list-style: none;
@@ -257,6 +250,147 @@ footer .tm-txt {
     font-size: 24px;
 }
 
+.item-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust this value to set the distance between image and text */
+}
+
+
+.txt-spacer-t {
+    display: flex;
+
+}
+
+section .contain-txt {
+    width: 30%;
+}
+
+div #text {
+    position: relative;
+    text-align: center;
+}
+
+div #text h3 {
+justify-content: center;
+ text-align: center;
+ padding-left: 70px;
+ padding-right: 90px;
+}
+
+div #text-price {
+    position: relative;
+    text-align: center;
+}
+
+div #text-price h4 {
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+justify-content: center;
+ text-align: center;
+ padding-left: 80px;
+ padding-right: 105px;
+}
+
+.contain {
+    display: inline;
+    
+    text-align: center;
+}
+
+div #button-tab {
+    justify-content: center;
+     text-align: center;
+     padding-left: 70px;
+     padding-right: 90px;
+    }
+    
+    div #button-tab {
+        position: relative;
+        text-align: center;
+    }
+    
+    div #button-tab h4 {
+        font-size: 20px;
+        color: rgb(104, 104, 104);
+        justify-content: center;
+        text-align: center;
+    }
+
+    button {
+        margin-left: 50px;
+        margin-right: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 30px;
+        color: white;
+        background-color: #C03B00;
+        border-radius: 40px;
+        border-style: none;
+
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+
+.contain-txt {
+    display: inline;
+    
+    text-align: center;
+}
+
+
+.img-box-main {
+    background-color: rgb(106, 200, 255);
+    border-radius: 500px;
+}
+
+.img-box-b {
+    background-color: rgb(175, 130, 78);
+    border-radius: 500px;
+}
+
+.img-pos {
+    display: flex;
+    justify-content: center;
+}
+/* 
+.img-pos-t {
+    display: flex;
+    flex-direction: row;
+} */
+
+.img-pos-txt {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-box {
+    background-color: rgb(106, 200, 255);
+    border-radius: 500px;
+}
+
+.item-container img {
+    display: block;
+    background-color: rgb(106, 200, 255);
+    border-radius: 200px;
+    max-width: 60%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.item-container h4 {
+    position: relative;
+    bottom: -15px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 18px;
+    z-index: 1; 
+}
 
 /* --- Contact Specific Styles--- */
 
@@ -294,12 +428,15 @@ input {
     text-align: left;
 }
 
+
 .title-box {
+    background-color: rgb(192, 59, 0);
     padding-bottom: 10px;
     padding-left: 15px;
     padding-top: 10px;
     padding-right: 15px;
-}
+  }
+
 
 
 .title-box-t {
@@ -476,38 +613,6 @@ footer .foot-txt {
 
 /* Flexbox Responsive */
 
-/* MOBILE SLIDESHOW SECTION */
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.slideshow-container {
-    max-width: 100%;
-    height: 100%;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    touch-action: pan-y;
-    display: flex;
-}
-
-.slide {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-/* MOBILE SLIDESHOW STYLES ENDS*/
 
 nav .pg-m {
     display: inline-flex;
