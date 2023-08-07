@@ -162,59 +162,6 @@ footer .menu {
     font-size: 15px;
 }
 
-#almond-anim:hover {
-    cursor: pointer;
-    transition: ease-in 0.3s;
-    filter: drop-shadow(0 0 0.55rem rgb(43, 11, 11));
-}
-
-#alc-anim:hover {
-    transition: ease-in-out 0.3s;
-    transform: scale(70%);
-}
-
-#nat-anim:hover {
-    animation: bubble-bounce 0.95s linear infinite;
-}
-@keyframes bubble-bounce {
-    20% {
-        transform: translateZ(0);
-    } 
-    40% {
-        transform: translateX(-15px);
-    } 
-    90% {
-        transform: translateZ(-15px);
-    } 
-}
-
-#glut-anim:hover {
-    transition: ease-in 0.6s;
-    animation: rotation 2s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-      from {
-        transform: rotate(0deg);
-      }
-}
-
-
-.badge {
-    margin-left: 80px;
-    padding-top: 20px;
-}
-
-.badge-size {
-    width: 70%;
-}
-
 .t-box {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -315,6 +262,9 @@ footer .tm-txt {
 
 }
 
+section .contain-txt {
+    width: 30%;
+}
 
 div #text {
     position: relative;
@@ -324,6 +274,8 @@ div #text {
 div #text h3 {
 justify-content: center;
  text-align: center;
+ padding-left: 70px;
+ padding-right: 90px;
 }
 
 div #text-price {
@@ -340,15 +292,50 @@ justify-content: center;
  padding-right: 105px;
 }
 
+div #text-price-d h4 {
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+justify-content: center;
+ text-align: center;
+ padding-left: 80px;
+ padding-right: 400px;
+}
+
 .contain {
-    display: inline-flex;
+    display: inline;
     
     text-align: center;
 }
 
+.contain-txt-merch {
+    padding-left: 100px;
+    color: rgb(104, 104, 104);
+}
+
+div #button-tab-merch {
+    justify-content: center;
+     text-align: center;
+     padding-left: 40px;
+    }
+
+
+    div #button-tab-d{
+        justify-content: center;
+         text-align: center;
+
+        }
+
+        .contain-txt-d {
+            padding-left: px;
+            color: rgb(104, 104, 104);
+        }
+
+
 div #button-tab {
     justify-content: center;
      text-align: center;
+     padding-left: 70px;
+     padding-right: 90px;
     }
     
     div #button-tab {
@@ -363,9 +350,10 @@ div #button-tab {
         text-align: center;
     }
 
+
     button {
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 10px;
         padding-left: 50px;
         padding-right: 50px;
         margin-top: 30px;
@@ -380,9 +368,7 @@ div #button-tab {
     
 
 .contain-txt {
-    display: inline-flex;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: inline;
     
     text-align: center;
 }
@@ -871,5 +857,33 @@ nav .pg-m {
     }
 
 
-
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 50%;
+    left: 50%; /* Center the tooltip horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.image-container:hover .tooltip {
+    display: inline-flex;
+}
+  
+  
